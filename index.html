@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality First - Reddit Spam Filter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-yellow: #FFD700;
+            --brand-orange: #FF9533;
+            --background: #FFFFFF;
+            --foreground: #121212;
+            --border: #000000;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header {
+            background-color: var(--brand-yellow);
+            border-bottom: 6px solid var(--border);
+            padding: 60px 20px;
+        }
+
+        .logo-img {
+            max-width: 200px;
+            border: 6px solid var(--border);
+            border-radius: 24px;
+            background: white;
+            box-shadow: 10px 10px 0px rgba(0,0,0,1);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Short Stack', cursive;
+            font-size: 3.5rem;
+            margin: 0;
+            color: var(--border);
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 10px;
+            color: rgba(0,0,0,0.7);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        @media (max-width: 600px) {
+            .features { grid-template-columns: 1fr; }
+        }
+
+        .feature-card {
+            background: white;
+            border: 4px solid var(--border);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 6px 6px 0px var(--brand-yellow);
+            text-align: left;
+        }
+
+        .feature-card h3 {
+            font-family: 'Short Stack', cursive;
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--brand-orange);
+            color: black;
+            padding: 20px 40px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: none;
+            border: 4px solid var(--border);
+            border-radius: 50px;
+            box-shadow: 6px 6px 0px var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px var(--border);
+        }
+
+        footer {
+            margin-top: 100px;
+            padding: 40px;
+            border-top: 2px dashed #ccc;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--foreground);
+            text-decoration: underline;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="high res logo.png" alt="Quality First Logo" class="logo-img">
+            <h1>Quality First</h1>
+            <p class="tagline">The Reddit Spam Silencer</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Stop the robots from ruining your feed.</h2>
+            <p>Quality First finds and hides annoying bots and fake people automatically, so you can focus on real conversations from real humans.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🤖 Hides the Bots</h3>
+                    <p>Uses smart patterns to find robots and makes them tiny or invisible inside your feed.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🏠 Stays Local</h3>
+                    <p>Everything runs on your computer. We don't use servers and we never take your data.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Fast & Simple</h3>
+                    <p>No complex setup. Just turn it on and watch the clutter disappear instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✨ Real Talk</h3>
+                    <p>Spend less time scrolling past spam and more time talking to real people.</p>
+                </div>
+            </div>
+
+            <a href="#" class="cta-button">View on Chrome Web Store</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Stefan Bozovic. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
